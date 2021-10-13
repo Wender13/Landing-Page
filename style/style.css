@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px;
+    margin: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #FD7D32;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:active{
+    position:relative;
+    top: 2px;
+    left: 2px;
+    box-shadow:none;
+  }
+
+/* Nav */
+
+nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+nav p {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Dancing Script', cursive;
+}
+
+nav ul {
+    font-size: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 16px;
+}
+
+/* ------------------ */
+
+/* Header */
+
+header {
+    background-color: #1F2937;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+header .contents {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    gap: 100px;
+}
+
+header .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .text h1 {
+    font-size: 32px;
+    font-weight: 900;
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+header .text p {
+    max-width: 350px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+header .text > button {
+    width: 100px;
+    height: auto;
+    padding: 8px;
+    border: 0;
+    margin: 16px;
+    font-size: 16px;
+    font-weight: 550;
+    color: white;
+    background-color: #2D7DD2;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.719);
+}
+
+header .contents .photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .contents .photo > img {
+    min-width: 200px;
+    max-width: 600px;
+    height: auto;
+    max-height: 400px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.719);
+    margin-bottom: 8px;
+}
+
+/* ------------------ */
+
+main {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+main article a {
+    color: black;
+}
+
+/* Article with the cars' photos */
+
+article.one {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 200px;
+}
+
+article.one .main-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+article.one .main-photo img {
+    max-width: 350px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.719);
+    margin-bottom: 8px;
+}
+
+article.one .main-photo .credits {
+    margin-bottom: 16px;
+}
+
+article.one .main-photo .text {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* ------------------ */
+
+ /* Article with the quote*/
+
+article.two {
+    background-color: #E5E7EB;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article .quote {
+    font-size: 32px;
+    font-weight: 300;
+}
+
+article .author {
+    font-size: 24px;
+    width: 85%;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* ------------------ */
+
+/* Article three */
+
+article.three {
+    background-color: #2D7DD2;
+    padding: 32px;
+    margin: 100px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+article.three h2 {
+    font-size: 26px;
+    padding: 0;
+    margin: 0;
+}
+
+article.three .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+article.three .text p {
+    font-weight: 300;
+}
+
+article.three button {
+    background-color: #2D7DD2;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 8px 24px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.719);
+}
+
+/* ------------------ */
+
+footer {
+    background-color: #1F2937;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
