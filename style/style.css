@@ -40,6 +40,8 @@ button:active{
 /* Nav */
 
 nav {
+    position: sticky;
+    top: 0;
     background-color: #13171d;
     color: white;
     padding: 16px;
